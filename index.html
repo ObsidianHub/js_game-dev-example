@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Game Example</title>
+    <title>Brick Breaker</title>
     <style>
       #gameScreen {
         border: 1px solid black;
       }
+      img {
+        width: 20px;
+        display: none;
+      }
     </style>
   </head>
   <body>
+    <img id="img_ball" src="assets/images/ball.png" alt="Ball" />
+
     <canvas id="gameScreen" width="800" height="600"></canvas>
 
     <script src="src/paddle.js"></script>

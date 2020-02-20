@@ -12,6 +12,9 @@ paddle.draw(ctx);
 
 let lastTime = 0;
 
+// images
+let imgBall = document.getElementById("img_ball");
+
 function gameLoop(timestamp) {
   let deltaTime = timestamp - lastTime;
   lastTime = timestamp;
