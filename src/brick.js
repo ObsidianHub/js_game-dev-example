@@ -9,7 +9,11 @@ class Brick {
     this.height = 24;
   }
 
-  update() {}
+  update() {
+    if (detectCollision(this.game.ball, this)) {
+      this.game.ball.speed.y = -this.game.ball.speed.y;
+    }
+  }
 
   draw(ctx) {
     ctx.drawImage(
