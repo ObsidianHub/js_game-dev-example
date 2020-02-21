@@ -9,7 +9,7 @@ class Ball {
 
     this.position = { x: 10, y: 10 };
     this.speed = { x: 3, y: 3 };
-    this.size = 28;
+    this.size = 20;
   }
 
   draw(ctx) {
