@@ -8,9 +8,12 @@ class Game {
     this.ball = new Ball(this);
     this.paddle = new Paddle(this);
 
-    let brick = new Brick(this, { x: 20, y: 20 });
+    let bricks = [];
+    for (let i = 0; i < 10; i++) {
+      bricks.push(new Brick(this, { x: i * 52, y: 30 }));
+    }
 
-    this.gameObjects = [this.ball, this.paddle, brick];
+    this.gameObjects = [this.ball, this.paddle, ...bricks];
 
     new InputHandler(this.paddle);
   }
