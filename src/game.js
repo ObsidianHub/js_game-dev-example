@@ -8,7 +8,9 @@ class Game {
     this.ball = new Ball(this);
     this.paddle = new Paddle(this);
 
-    this.gameObjects = [this.ball, this.paddle];
+    let brick = new Brick(this, { x: 20, y: 20 });
+
+    this.gameObjects = [this.ball, this.paddle, brick];
 
     new InputHandler(this.paddle);
   }
